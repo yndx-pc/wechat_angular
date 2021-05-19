@@ -1,0 +1,19 @@
+<div style="display: flex; justify-content: space-around">
+  <button nz-button nzType="link">
+    <i nz-icon nzType="wechat" nzTheme="fill" style="font-size: 1.5rem" [ngClass]="{currentBtn: current == 'Wechat'}" (click)="test1()"></i><br>
+    <span style="color: green">微信</span>
+  </button>
+  <button nz-button nzType="link">
+    <i nz-icon nzType="menu" nzTheme="outline" style="font-size: 1.5rem" [ngClass]="{currentBtn: current == 'addressList'}" (click)="test2()"></i><br>
+    通讯录
+  </button>
+  <button nz-button nzType="link">
+    <i nz-icon nzType="compass" nzTheme="fill" style="font-size: 1.5rem" [ngClass]="{currentBtn: current == 'find'}" (click)="test3()"></i><br>
+    发现
+  </button>
+  <button nz-button nzType="link">
+    <i nz-icon nzType="user" nzTheme="outline" style="font-size: 1.5rem" [ngClass]="{currentBtn: current == 'me'}" (click)="test4()"></i><br>
+    我
+  </button>
+</div>
+

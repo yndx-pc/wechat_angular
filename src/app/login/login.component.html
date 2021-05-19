@@ -1,0 +1,16 @@
+<div style="text-align: center">
+  <img src="assets/logo2.png">
+</div>
+<nz-space nzDirection="vertical" nzSize="large" style="width: 100%; padding: 20px">
+  <nz-input-group *nzSpaceItem nzPrefixIcon="user">
+    <input nz-input type="text" placeholder="用户名" [(ngModel)]="userName">
+  </nz-input-group>
+  <nz-input-group *nzSpaceItem nzPrefixIcon="lock">
+    <input nz-input type="password" placeholder="密码" [(ngModel)]="userPassword">
+  </nz-input-group>
+  <button (click)="onLoad()" *nzSpaceItem nz-button [nzLoading]="flag" nzType="primary" style="width: 100%">登录</button>
+</nz-space>
+<div style="text-align: center; color: red">
+  {{msgText}}
+</div>
+
